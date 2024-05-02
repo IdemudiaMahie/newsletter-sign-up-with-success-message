@@ -1,0 +1,128 @@
+
+@font-face {
+    font-family: mahieRobotoBold;
+    src: url(./assets/fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: mahieRobotoRegular;
+    src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Tomato: hsl(4, 100%, 67%);
+
+    /* ### Neutral */
+
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--Dark-Slate-Grey);
+    font-family: mahieRobotoRegular;
+}
+
+.product section {
+    padding: 2rem;
+}
+
+.product section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.product section p {
+    margin-bottom: 1.5rem;
+}
+
+.product section ul {
+    margin-left: 1.3rem;
+    list-style-position: outside;
+}
+
+.product section ul li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.product section ul li::marker {
+    content: url(./assets/images/icon-list.svg);
+}
+
+.product section form label {
+    display: block;
+    font-family: mahieRobotoBold;
+    margin: 3rem 0 1rem;
+    font-size: 0.8rem;
+}
+
+.product section form input {
+    width: 100%;
+    padding: 1rem;
+    outline: 1px solid var(--Grey);
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.product section form input::placeholder {
+    color: var(--Grey);
+    font-size: 1rem;
+}
+
+.success {
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.success img {
+    width: 70px;
+    margin-top: 4rem;
+}
+
+.product section h2,
+.success h2 {
+    font-size: 2.5rem;
+    font-family: mahieRobotoBold;
+}
+
+.success p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 9rem;
+}
+
+.product form button,
+.success button {
+    padding: 1.5rem;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-family: mahieRobotoBold;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+
